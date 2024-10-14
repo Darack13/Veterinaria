@@ -10,7 +10,7 @@ namespace Veterinaria.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Pagee";
+            ViewBag.Title = "Home Page";
 
             return View();
         }
