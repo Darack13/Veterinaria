@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d1c603fa60064cfc9748b3f11594eedb" Name="Diagram1">
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Cita" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Cliente" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.DetallesFactura" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Diagnostico" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Especy" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.EstadosCita" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Factura" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.HistorialMedico" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Hospitalizacion" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Medicamento" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Paciente" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.PruebasLaboratorio" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Raza" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Receta" Width="1.5" PointX="9.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Role" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Servicio" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Tratamiento" Width="1.5" PointX="7.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Usuario" Width="1.5" PointX="10" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClinicaVeterinariaModel.Veterinario" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Citas__id_estado__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Citas__id_pacien__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Citas__id_veteri__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Diagnosti__id_ci__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Facturas__id_cli__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Pacientes__id_cl__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__DetallesF__id_fa__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__DetallesF__id_se__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Recetas__id_diag__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Pacientes__id_es__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Razas__id_especi__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Historial__id_pa__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Hospitali__id_pa__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Recetas__id_medi__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Pacientes__id_ra__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__PruebasLa__id_pa__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="ClinicaVeterinariaModel.FK__Usuarios__id_rol__6B24EA82" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

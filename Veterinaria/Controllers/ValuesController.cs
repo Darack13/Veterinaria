@@ -4,15 +4,19 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Veterinaria.Clases;
+using Veterinaria.Models;
 
 namespace Veterinaria.Controllers
 {
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        [HttpGet]
+        public List<Raza> ConsultarRazas()
         {
-            return new string[] { "value1", "value2" };
+            clsRaza _raza = new clsRaza();
+            return _raza.GetRazas();
         }
 
         // GET api/values/5
