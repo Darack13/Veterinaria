@@ -19,37 +19,28 @@ namespace Veterinaria.Controllers
         [Route("ConsultarPaciente")]
         public Paciente ConsultarPaciente(int IdPaciente)
         {
-            clsPacientes _paciente = new clsPaciente();
+            clsPacientes _paciente = new clsPacientes();
             return _paciente.GetPacienteByID(IdPaciente);
         }
 
 
         [HttpGet]
-        [Route("ConsultarRazas")]
-        public List<Raza> ConsultarRazas()
+        [Route("ConsultarPacientes")]
+        public List<Paciente> ConsultarPacientes()
         {
-            clsRaza _raza = new clsRaza();
-            return _raza.GetRazas();
-        }
-
-
-        [HttpGet]
-        [Route("ConsultarRazasPorEspecie")]
-        public List<Raza> ConsultarRazasPorEspecie(int IdEspecie)
-        {
-            clsRaza _raza = new clsRaza();
-            return _raza.GetRazasBySpecy(IdEspecie);
+            clsPacientes new clsPacientes();
+            return _paciente.GetPacientes();
         }
 
 
         [HttpPost]
-        [Route("AgregarRaza")]
-        public string InsertarRaza([FromBody] Raza DataRaza)
+        [Route("AgregarPaciente")]
+        public string InsertarPaciente([FromBody] Paciente DataPaciente)
         {
-            clsRaza _raza = new clsRaza();
-            _raza.raza = DataRaza; 
+            clsPacientes _paciente = new clsPacientes();
+            _paciente.paciente = DataPaciente; 
 
-            return _raza.InsertRaza();
+            return _paciente.InsertPaciente();
         }
 
 
